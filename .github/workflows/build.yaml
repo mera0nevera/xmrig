@@ -24,7 +24,7 @@ jobs:
     - name: Make executable
       working-directory: ${{env.working-dir}}
       run: chmod u+x ./xmrig
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: my-xmrig
         path: build/xmrig
